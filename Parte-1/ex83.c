@@ -18,6 +18,10 @@ int main(){
     }
     printf("\nDecrescente: ");
     for(int i = 0; i < M; i++) {
-        printf("%.1f  ", vet[i]);
+        if (i>1){
+            printf("%.1f, ", vet[i]);
+        }
+        else
+            printf("%.1f. ", vet[i]);
     }
 }
